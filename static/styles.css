@@ -1,0 +1,63 @@
+h2 {
+    font-family: Geneva;
+    color: #273D74;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+
+.instructions {
+    width: 30em;
+    margin-right: 5px;
+    border: 2px solid #20B9A9;
+    border-radius: 5px;
+    padding-left: 27px;
+    margin-bottom: 15px;
+}
+
+
+h3 {
+    font-family: Geneva;
+    color:#5A5D66;
+}
+
+
+.input-box {
+    background: #F5FE96;
+    margin: .75em;
+    font-family: Geneva;
+}
+
+
+.menu {
+    font-family:Geneva;
+    font-size: 13px;
+    color:#273D74;
+    font-weight:700;
+    padding:2px 6px;
+    border:1px solid #5A5D66;
+}
+
+
+.lastname {
+    font-weight: bold;
+}
+
+
+.button {
+    background-color:#F5FE96;
+    border:1.5px solid #5A5D66;
+    border-radius:5px;
+    color:#273D74;
+    font-family: Geneva;
+    font-size:14px;
+    font-weight:700;
+    padding:2px 6px;
+    margin-right: 5px;
+}
+
+.fieldtext {
+    font-family: Times;
+    color:#5A5D66;
+    margin: 5px;
+}

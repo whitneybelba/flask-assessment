@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="./static/styles.css">
+    <title>Hello Job Applicants</title>
+</head>
+<body>
+    <h2>Hello Job Applicants</h2>
+    <div class="instructions">
+        <h3>Please enter some information in the form below. <br>We request your first and last name, your salary <br>requirements, and which job you are applying for.<br>Best of luck in your job search!</h3>
+    </div>
+                            <!--    Input form    -->
+
+    <form action="/application" method= "POST">
+        <label for="field-firstname" class="fieldtext">First Name:</label>
+        <input id="field-firstname" type="text" class="input-box" name="firstname">
+
+        <label for="field-lastname" class="fieldtext">Last Name:</label>
+        <input id="field-lastname" type="text" class="input-box lastname" 
+            name="lastname"><br>
+
+        <label for="field-salary" class="fieldtext">Salary Requirements 
+            (numbers only please): $</label>
+        <input id="field-salary" type="text" class="input-box" name="salary"><br>
+
+        <label for="job" class="fieldtext">Which job are you applying for?</label>
+        <select id="job" class="input-box menu" name="title">
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="QA Engineer">QA Engineer</option>
+            <option value="Product Manager">Product Manager</option>
+        </select> <br><br>
+        <input type="submit" class="button" name="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+
+
+
+
+<!-- Part II - 
+
+I tried to have my webpages inherit from base.html, but every time, the title would update like it should, but everything else would stop working. I'm sure I was just overlooking something simple, so I'd love to go over this in advising on Wednesday. I've included below what I did have for the Jinja inheritance, but I kept the original working code above so that the Flask app would still work.
+
+
+
+{% extends 'base.html' %}
+
+<html>
+<head>
+    <link rel="stylesheet" href="./static/styles.css">
+    {% block title %}Hello Job Applicants{% endblock %}
+</head>
+<body>
+    <h2>Hello Job Applicants</h2>
+    <div class="instructions">
+        <h3>Please enter some information in the form below. <br>We request your first and last name, your salary <br>requirements, and which job you are applying for.<br>Best of luck in your job search!</h3>
+    </div> -->
+                            <!--    Input form    -->
+
+    <!-- <form action="/application" method= "POST">
+        <label for="field-firstname" class="fieldtext">First Name:</label>
+        <input id="field-firstname" type="text" class="input-box" name="firstname">
+
+        <label for="field-lastname" class="fieldtext">Last Name:</label>
+        <input id="field-lastname" type="text" class="input-box lastname" 
+            name="lastname"><br>
+
+        <label for="field-salary" class="fieldtext">Salary Requirements 
+            (numbers only please): $</label>
+        <input id="field-salary" type="text" class="input-box" name="salary"><br>
+
+        <label for="job" class="fieldtext">Which job are you applying for?</label>
+        <select id="job" class="input-box menu" name="title">
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="QA Engineer">QA Engineer</option>
+            <option value="Product Manager">Product Manager</option>
+        </select> <br><br>
+        <input type="submit" class="button" name="submit" value="Submit">
+    </form>
+
+</body>
+</html> -->

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <title>Application Response</title>
+</head>
+<body>
+
+<h3>Thank you, {{first}} {{last}}, for applying to be a {{title}}.<br>
+    Your minimum salary requirement is {{salary}} dollars.</h3>
+
+</body>
+</html>
+
+
+
+
+<!-- Part II - 
+
+I tried to have my webpages inherit from base.html, but every time, the title would update like it should, but everything else would stop working. I'm sure I was just overlooking something simple, so I'd love to go over this in advising on Wednesday. I've included below what I did have for the Jinja inheritance, but I kept the original working code above so that the Flask app would still work.
+
+{% extends 'base.html' %}
+
+<html>
+<head>
+ {% block title %}Application Response{% endblock %}
+</head>
+<body>
+
+<h3>Thank you, {{first}} {{last}}, for applying to be a {{title}}.<br>
+    Your minimum salary requirement is {{salary}} dollars.</h3>
+
+</body>
+</html> -->
+
