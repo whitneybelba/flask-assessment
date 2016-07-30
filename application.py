@@ -37,18 +37,12 @@ def get_applicant_details():
     salary_requirements = request.form.get("salary")
     job_title = request.form.get("title")
 
-    return render_template("application-response.html",
-                            first=first_name,
-                            last=last_name,
-                            salary=salary_requirements,
-                            title=job_title)
-
-
-@app.route("/application-response", methods=["GET"])
-def show_applicant_details():
-    """Return a response to the applicant regarding their input."""
-
-    return render_template("application-response.html")
+    return render_template(
+        "application-response.html",
+        first=first_name,
+        last=last_name,
+        salary=salary_requirements,
+        title=job_title)
 
 
 if __name__ == "__main__":
